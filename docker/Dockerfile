@@ -17,6 +17,7 @@ RUN cd $HOME \
 # copy your repo into the docker container
 ################################################
 #COPY . $HOME/<repo name>
+COPY . $HOME/hello_world
 ################################################
 
 WORKDIR $HOME
