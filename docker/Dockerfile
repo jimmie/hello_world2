@@ -1,12 +1,10 @@
-FROM hysds/pge-base:latest
+FROM cae-artifactory.jpl.nasa.gov:16001/gov/nasa/jpl/nisar/sds/pcm/nisar_ade:1.3
 
 ENV HOME=/home/jovyan \
     CONDA_DIR=/opt/conda
 
 USER root
 RUN $CONDA_DIR/bin/conda install -y nb_conda_kernels
-
-USER jovyan
 RUN $CONDA_DIR/bin/pip install 'ipykernel<5.0.0'
 
 RUN cd $HOME \
@@ -14,9 +12,10 @@ RUN cd $HOME \
     && cd notebook_pge_wrapper \
     && $CONDA_DIR/bin/pip install -e .
 
+USER jovyan
+
 # copy your repo into the docker container
 ################################################
-#COPY . $HOME/<repo name>
 COPY . $HOME/hello_world
 ################################################
 
