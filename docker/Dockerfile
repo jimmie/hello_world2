@@ -12,7 +12,7 @@ RUN cd $HOME \
     && cd notebook_pge_wrapper \
     && $CONDA_DIR/bin/pip install -e .
 
-USER ops
+USER jovyan
 
 # copy your repo into the docker container
 ################################################
