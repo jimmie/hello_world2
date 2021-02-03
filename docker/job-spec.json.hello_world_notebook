@@ -1,5 +1,5 @@
 {
-  "command": "notebook-pge-wrapper execute /home/ops/hello_world/notebook_pges/hello_world_notebook.ipynb",
+  "command": "notebook-pge-wrapper execute /home/jovyan/hello_world/notebook_pges/hello_world_notebook.ipynb",
   "time_limit": 600,
   "soft_time_limit": 600,
   "disk_usage": "1GB",
