@@ -1,2 +1,3 @@
-.ipynb_checkpoints/*
+.ipynb_checkpoints
+notebook_pges/.ipynb_checkpoints
 *.swp
