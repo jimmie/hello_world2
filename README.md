@@ -1,5 +1,12 @@
 # Notebook PGE
 
+Refer to the NISAR JupyterHub User Guide for details on using the notebooks in this repository to execute a notebook
+at scale within the SDS.
+
+Below is the 'standard' README.md file that is auto-generated upon executing *notebook-pge-wrapper create*.
+
+---
+
 ### Generating a base Notebook PGE project
 ```bash
 $ notebook-pge-wrapper create <project_name>
